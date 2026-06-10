@@ -29,6 +29,12 @@ async function main() {
     assert.equal(response.status, 200, `Expected ${route} to return 200`);
     const body = await response.text();
     assert.match(body, /Board Decision Recovery Readiness Brief|Recovery lanes|Fallback map|Recovery posture/);
+    if (route === "/") {
+      assert.match(body, /Product depth/);
+      assert.match(body, /What these repos have in common/);
+      assert.match(body, /portfolio\.kineticgain\.com/);
+      assert.match(body, /board-decision-recovery-readiness-brief/);
+    }
   }
 
   for (const route of apiRoutes) {

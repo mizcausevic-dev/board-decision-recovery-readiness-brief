@@ -28,6 +28,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run prerender
+      - name: Guard enriched public surface
+        run: |
+          grep -q "Product depth" site/index.html
+          grep -q "What these repos have in common" site/index.html
+          grep -q "portfolio.kineticgain.com" site/index.html
+          grep -q "board-decision-recovery-readiness-brief" site/index.html
       - name: SEO assets (robots.txt + sitemap.xml)
         run: |
           DOMAIN=$(cat CNAME 2>/dev/null | tr -d '[:space:]')

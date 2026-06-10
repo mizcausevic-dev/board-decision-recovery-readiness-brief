@@ -9,6 +9,9 @@ describe("board-decision-recovery-readiness-brief app", () => {
     const response = await request(app).get("/");
     expect(response.status).toBe(200);
     expect(response.text).toContain("Board Decision Recovery Readiness Brief");
+    expect(response.text).toContain("Product depth");
+    expect(response.text).toContain("What these repos have in common");
+    expect(response.text).toContain("portfolio.kineticgain.com");
   });
 
   it("serves the recovery lanes route", async () => {

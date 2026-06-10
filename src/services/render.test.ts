@@ -13,6 +13,14 @@ describe("render", () => {
     expect(renderRecoveryOverview()).toContain("Board Decision Recovery Readiness Brief");
   });
 
+  it("includes product-depth and portfolio context", () => {
+    const html = renderRecoveryOverview();
+    expect(html).toContain("Product depth");
+    expect(html).toContain("What these repos have in common");
+    expect(html).toContain("portfolio.kineticgain.com");
+    expect(html).toContain("board-decision-recovery-readiness-brief");
+  });
+
   it("renders the recovery lanes route", () => {
     expect(renderRecoveryLanes()).toContain("/recovery-lanes");
   });

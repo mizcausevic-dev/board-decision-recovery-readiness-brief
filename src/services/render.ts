@@ -2,6 +2,9 @@ import { fallbackMap, payload, recoveryLanes, recoveryPosture, riskMap, summary,
 
 const productTitle = "Board Decision Recovery Readiness Brief";
 const domain = "https://recovery.kineticgain.com";
+const repoUrl = "https://github.com/mizcausevic-dev/board-decision-recovery-readiness-brief";
+const portfolioUrl = "https://portfolio.kineticgain.com/";
+const suiteUrl = "https://suite.kineticgain.com/";
 
 function escapeHtml(value: string) {
   return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -113,7 +116,9 @@ function shell(title: string, path: string, body: string, description: string) {
       <div class="footer">
         <span>${productTitle}</span>
         <a href="${domain}">${domain.replace("https://", "")}</a>
-        <a href="https://github.com/mizcausevic-dev/">GitHub</a>
+        <a href="${repoUrl}">Repo</a>
+        <a href="${portfolioUrl}">Portfolio command center</a>
+        <a href="${suiteUrl}">Kinetic Gain Suite</a>
         <a href="https://www.linkedin.com/in/mirzacausevic/">LinkedIn</a>
         <a href="https://kineticgain.com/">Kinetic Gain</a>
       </div>
@@ -174,6 +179,36 @@ export function renderRecoveryOverview() {
         <div class="metric"><span class="metric-label">Priority lanes</span><span class="metric-value">${executiveSummary.recoveryPriorityLanes}</span><div class="metric-copy">Paths that justify fallback reinforcement or added redundancy before more load arrives.</div></div>
         <div class="metric"><span class="metric-label">Value at stake</span><span class="metric-value">$${executiveSummary.valueAtStakeMillions}M</span><div class="metric-copy">Modeled exposure tied to fragile board-facing recovery paths.</div></div>
       </div>
+    </section>
+    <section class="section">
+      <h2>Product depth</h2>
+      <p class="lede">This is a recovery-readiness brief, not another incident recap. It helps executives decide whether critical decision paths can recover cleanly after failure, which fallback owners are overloaded, where redundant capacity is missing, and what should be reinforced before the next board or investor cycle.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="chip">Buyer value</div>
+          <h3>Turn recovery risk into a board reinforcement sequence.</h3>
+          <p>Non-technical leaders see the plain-English recovery story: which path is fragile, how long restoration takes, who owns the fallback, and whether the next move is simplify, standardize, automate, escalate, or add redundancy.</p>
+        </article>
+        <article class="card">
+          <div class="chip">Technical proof</div>
+          <h3>Typed fixtures, deterministic scoring, and reproducible outputs.</h3>
+          <p>The same packet drives JSON APIs, static HTML, CLI summaries, screenshots, and tests, so the public page is backed by a repeatable model rather than hand-written positioning copy.</p>
+        </article>
+        <article class="card">
+          <div class="chip">GTM story</div>
+          <h3>Useful for post-incident prep, diligence, and operating reviews.</h3>
+          <p>The product gives consultants, operators, and investors a concrete way to discuss recovery posture across AI governance, identity, revenue systems, regulated infrastructure, and board-facing transformation programs.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <h2>What these repos have in common</h2>
+      <p class="lede">The executive-intelligence repos translate fragmented operating risk into buyer-readable decision surfaces. Each one keeps a narrow product promise, a visible scoring model, reproducible evidence, and a public route that ties back to the broader Kinetic Gain portfolio instead of standing alone as generic demo ware.</p>
+      <ul>
+        <li><strong>Board-ready language:</strong> business owners get the decision, exposure, next move, and evidence trail without needing to inspect raw systems.</li>
+        <li><strong>Operator-readable proof:</strong> technical teams can inspect routes, fixtures, APIs, tests, and rendered assets to see how the story is produced.</li>
+        <li><strong>Portfolio signal:</strong> every surface strengthens the public map at <a href="${portfolioUrl}">portfolio.kineticgain.com</a> and the suite narrative at <a href="${suiteUrl}">suite.kineticgain.com</a>.</li>
+      </ul>
     </section>
     <section class="section">
       <h2>Recovery lanes</h2>
