@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fallback map · Kinetic Gain</title>
+    <meta name="description" content="Fallback-map view showing weak restore points, fallback gaps, and recovery moves before another board cycle." />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #07111d;
+        --panel: #0d1a2b;
+        --border: rgba(103, 224, 190, 0.22);
+        --text: #edf2ff;
+        --muted: #9fb0cf;
+        --accent: #67e0be;
+        --accent-2: #7dc4ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(125, 196, 255, 0.12), transparent 30%),
+          linear-gradient(180deg, #050c16 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+      a { color: var(--accent-2); text-decoration: none; }
+      .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+      .hero, .section {
+        background: linear-gradient(180deg, rgba(14, 28, 45, 0.95), rgba(10, 19, 33, 0.98));
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        padding: 28px;
+        box-shadow: 0 18px 60px rgba(2, 7, 16, 0.35);
+      }
+      .hero { margin-bottom: 24px; }
+      .eyebrow {
+        display: inline-block;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(103, 224, 190, 0.08);
+        color: var(--accent);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.28em;
+      }
+      h1, h2 { margin: 18px 0 12px; font-family: Georgia, serif; line-height: 0.95; }
+      h1 { font-size: clamp(56px, 8vw, 92px); max-width: 980px; }
+      h2 { font-size: clamp(36px, 4vw, 54px); }
+      .lede { color: var(--muted); font-size: 20px; line-height: 1.6; max-width: 920px; }
+      .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+      .nav a {
+        padding: 10px 14px;
+        border: 1px solid rgba(125, 196, 255, 0.18);
+        border-radius: 999px;
+        color: var(--muted);
+      }
+      .nav a.active { color: var(--text); border-color: var(--accent); background: rgba(103, 224, 190, 0.08); }
+      .metrics, .grid { display: grid; gap: 18px; }
+      .metrics { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: 26px; }
+      .metric, .card, .table-wrap {
+        background: rgba(16, 32, 50, 0.76);
+        border: 1px solid rgba(125, 196, 255, 0.12);
+        border-radius: 22px;
+        padding: 18px;
+      }
+      .metric-label, .chip { color: var(--accent); text-transform: uppercase; letter-spacing: 0.18em; font-size: 12px; }
+      .metric-value { display: block; font-size: 40px; font-weight: 700; margin-top: 10px; }
+      .metric-copy { margin-top: 10px; color: var(--muted); line-height: 1.5; }
+      .section { margin-top: 24px; }
+      .grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+      .card h3 { margin: 12px 0 10px; font-size: 30px; line-height: 1.05; }
+      .card p, li { color: var(--muted); line-height: 1.6; }
+      .table-wrap { overflow-x: auto; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(125, 196, 255, 0.12); vertical-align: top; }
+      th { color: var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; }
+      ul { padding-left: 20px; }
+      pre {
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        color: var(--muted);
+        background: rgba(7, 17, 29, 0.75);
+        border: 1px solid rgba(125, 196, 255, 0.12);
+        border-radius: 18px;
+        padding: 18px;
+      }
+      .footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+    </style>
+    <meta name="description" content="Board-ready recovery-readiness surface for showing whether executive decision paths can recover cleanly after failure, where fallback capacity is too thin, and what boards should reinforce before the next cycle starts.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fallback map · Kinetic Gain">
+  <meta property="og:description" content="Board-ready recovery-readiness surface for showing whether executive decision paths can recover cleanly after failure, where fallback capacity is too thin, and what boards should reinforce before the next cycle starts.">
+  <meta property="og:url" content="https://recovery.kineticgain.com/fallback-map/">
+  <meta property="og:site_name" content="Kinetic Gain">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fallback map · Kinetic Gain">
+  <meta name="twitter:description" content="Board-ready recovery-readiness surface for showing whether executive decision paths can recover cleanly after failure, where fallback capacity is too thin, and what boards should reinforce before the next cycle starts.">
+</head>
+  <body>
+    <div class="wrap">
+      <section class="hero">
+      <span class="eyebrow">Fallback map</span>
+      <h1>Weak fallback points, escalation load, and recovery moves stay visible in one scorecard instead of scattering across review notes.</h1>
+      <p class="lede">This view compares readiness headlines, recovery signals, and the exact fallback moves needed to keep the next board packet from landing on an unrecoverable path.</p>
+      <div class="nav"><a href="/">Overview</a><a href="/recovery-lanes">Recovery lanes</a><a class="active" href="/fallback-map">Fallback map</a><a href="/recovery-posture">Recovery posture</a><a href="/verification">Verification</a><a href="/docs">Docs</a></div>
+    </section>
+    <section class="section table-wrap">
+      <table>
+        <thead><tr><th>Lane</th><th>Headline</th><th>Recovery signal</th><th>Weakest fallback</th><th>Hours to restore</th><th>Escalation gaps</th><th>Recovery moves</th></tr></thead>
+        <tbody><tr>
+        <td>AI governance and agent readiness</td>
+        <td>AI recovery readiness is weaker than the current board packet implies.</td>
+        <td>The approval path reopens cleanly only when the same people are available to absorb policy and security collisions.</td>
+        <td>Policy-review backup path during an AI exception burst</td>
+        <td>48</td>
+        <td>2</td>
+        <td>assign alternate approval owner, AI recovery runbook, policy/security handoff drill</td>
+      </tr><tr>
+        <td>Identity and access governance</td>
+        <td>Identity recovery windows are too long for the next audit-driven cycle.</td>
+        <td>The path stays open, but recovery time grows quickly once audit escalations queue behind security approvals.</td>
+        <td>Audit exception restore path during stacked reviews</td>
+        <td>72</td>
+        <td>2</td>
+        <td>collapse duplicate review step, identity recovery clock, fallback escalation owner</td>
+      </tr><tr>
+        <td>Revenue systems and reporting</td>
+        <td>Revenue recovery still depends on one narrow signoff route.</td>
+        <td>The board packet shows who reviewed the decision, but not how the path recovers when one approver stalls.</td>
+        <td>Commercial signoff backup during forecast reopen</td>
+        <td>96</td>
+        <td>2</td>
+        <td>backup signoff path, forecast restore drill, handoff redundancy map</td>
+      </tr><tr>
+        <td>FinTech diligence and transaction controls</td>
+        <td>FinTech recovery readiness is now a buffer-capacity problem.</td>
+        <td>Merchant, treasury, and KYC reviews still converge on one overloaded recovery route.</td>
+        <td>Parallel diligence restore path during merchant-risk and KYC spikes</td>
+        <td>120</td>
+        <td>3</td>
+        <td>load buffer plan, parallel restore route, committee congestion drill</td>
+      </tr><tr>
+        <td>Procurement, trust, and buyer proof</td>
+        <td>Procurement remains the strongest recovery reference path in the estate.</td>
+        <td>Trust and commercial packets close with enough redundancy and named fallback coverage to absorb more demand.</td>
+        <td>None immediately visible under current modeled load</td>
+        <td>12</td>
+        <td>0</td>
+        <td>reference recovery packet, fallback playbook, copy-forward score history</td>
+      </tr><tr>
+        <td>Biotech and diagnostics control lanes</td>
+        <td>Biotech recovery readiness is weaker than regulated packets suggest.</td>
+        <td>CAPA, specimen, and safety packets still rely on narrow restore routes with weak fallback ownership.</td>
+        <td>Quality and compliance restore path during the next regulated exception burst</td>
+        <td>84</td>
+        <td>2</td>
+        <td>regulated backup route, recovery drill log, control packet fallback owner</td>
+      </tr></tbody>
+      </table>
+    </section>
+      <div class="footer">
+        <span>Board Decision Recovery Readiness Brief</span>
+        <a href="https://recovery.kineticgain.com">recovery.kineticgain.com</a>
+        <a href="https://github.com/mizcausevic-dev/board-decision-recovery-readiness-brief">Repo</a>
+        <a href="https://portfolio.kineticgain.com/">Portfolio command center</a>
+        <a href="https://suite.kineticgain.com/">Kinetic Gain Suite</a>
+        <a href="https://www.linkedin.com/in/mirzacausevic/">LinkedIn</a>
+        <a href="https://kineticgain.com/">Kinetic Gain</a>
+      </div>
+    </div>
+  </body>
+</html>

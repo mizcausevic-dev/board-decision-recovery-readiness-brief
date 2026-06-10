@@ -1,0 +1,10 @@
+{
+  "items": 6,
+  "constrainedLanes": 5,
+  "recoveryPriorityLanes": 4,
+  "averageBoardConfidence": 61.2,
+  "valueAtStakeMillions": 141,
+  "leadingMessage": "Recovery readiness is now a shared board-facing constraint and should be reinforced across multiple paths.",
+  "generatedAt": "2026-06-01T00:00:00Z",
+  "boardMessage": "Use procurement as the recovery reference path first, shorten the identity and AI restore windows second, add redundancy in revenue and biotech third, and buffer the FinTech lane before more committee load arrives."
+}

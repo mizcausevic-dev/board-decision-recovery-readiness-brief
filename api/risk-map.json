@@ -1,0 +1,74 @@
+[
+  {
+    "lane": "AI governance and agent readiness",
+    "track": "AI_GOVERNANCE",
+    "valueAtStakeMillions": 28,
+    "compositeRecoveryRiskScore": 32.7,
+    "boardConfidenceScore": 63,
+    "companyTags": [
+      "OpenAI",
+      "Anthropic",
+      "Microsoft"
+    ]
+  },
+  {
+    "lane": "Identity and access governance",
+    "track": "IDENTITY",
+    "valueAtStakeMillions": 17,
+    "compositeRecoveryRiskScore": 34.2,
+    "boardConfidenceScore": 59,
+    "companyTags": [
+      "Microsoft",
+      "Entra",
+      "Okta"
+    ]
+  },
+  {
+    "lane": "Revenue systems and reporting",
+    "track": "REVENUE_SYSTEMS",
+    "valueAtStakeMillions": 25,
+    "compositeRecoveryRiskScore": 39.7,
+    "boardConfidenceScore": 54,
+    "companyTags": [
+      "Power BI",
+      "Tableau",
+      "VWO"
+    ]
+  },
+  {
+    "lane": "FinTech diligence and transaction controls",
+    "track": "FINTECH",
+    "valueAtStakeMillions": 33,
+    "compositeRecoveryRiskScore": 47,
+    "boardConfidenceScore": 50,
+    "companyTags": [
+      "Stripe",
+      "Adyen",
+      "Plaid"
+    ]
+  },
+  {
+    "lane": "Procurement, trust, and buyer proof",
+    "track": "PROCUREMENT",
+    "valueAtStakeMillions": 12,
+    "compositeRecoveryRiskScore": 10.7,
+    "boardConfidenceScore": 85,
+    "companyTags": [
+      "Vanta",
+      "Drata",
+      "Google"
+    ]
+  },
+  {
+    "lane": "Biotech and diagnostics control lanes",
+    "track": "BIOTECH",
+    "valueAtStakeMillions": 26,
+    "compositeRecoveryRiskScore": 38.5,
+    "boardConfidenceScore": 56,
+    "companyTags": [
+      "LabVantage",
+      "Veeva",
+      "Thermo Fisher"
+    ]
+  }
+]

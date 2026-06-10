@@ -1,0 +1,1114 @@
+{
+  "report": {
+    "generatedAt": "2026-06-01T00:00:00Z",
+    "summary": {
+      "items": 6,
+      "constrainedLanes": 5,
+      "recoveryPriorityLanes": 4,
+      "averageBoardConfidence": 61.2,
+      "valueAtStakeMillions": 141,
+      "leadingMessage": "Recovery readiness is now a shared board-facing constraint and should be reinforced across multiple paths."
+    },
+    "items": [
+      {
+        "id": "ai-governance-recovery-readiness",
+        "lane": "AI governance and agent readiness",
+        "track": "AI_GOVERNANCE",
+        "action": "ASSIGN_FALLBACK_OWNER",
+        "recoveryTheme": "AI approvals move quickly, but the recovery path still depends on too few named fallback owners once policy and security collide.",
+        "boardQuestion": "If the AI approval route breaks, who restores the path and how quickly can the board trust it again?",
+        "owner": "Chief AI Officer",
+        "audience": "Board risk committee",
+        "currentPosture": "AI controls are visible, but fallback ownership is still too thin for a noisy exception cycle.",
+        "readinessHeadline": "AI recovery readiness is weaker than the current board packet implies.",
+        "recoverySignal": "The approval path reopens cleanly only when the same people are available to absorb policy and security collisions.",
+        "weakestFallback": "Policy-review backup path during an AI exception burst",
+        "recoveryMoves": [
+          "assign alternate approval owner",
+          "AI recovery runbook",
+          "policy/security handoff drill"
+        ],
+        "relatedSurfaces": [
+          "scorecard.kineticgain.com",
+          "memo.kineticgain.com",
+          "agents.kineticgain.com"
+        ],
+        "companyTags": [
+          "OpenAI",
+          "Anthropic",
+          "Microsoft"
+        ],
+        "decisionHandoffs": 4,
+        "recoveryHoursToRestore": 48,
+        "escalationGaps": 2,
+        "fallbackOwnerCoverageScore": 57,
+        "pathRedundancyScore": 60,
+        "boardConfidenceScore": 63,
+        "valueAtStakeMillions": 28,
+        "headline": "AI needs named fallback ownership before the next board cycle depends on recovery.",
+        "narrative": "The board should reinforce AI recovery ownership before another exception cycle turns one path failure into multiple approval stalls.",
+        "nextMove": "Name a backup approval owner and test AI recovery under policy-review load.",
+        "handoffAssessment": {
+          "severity": "MEDIUM",
+          "ok": false,
+          "message": "Decision handoffs are stretching recovery and may soon slow the fallback path."
+        },
+        "restoreAssessment": {
+          "severity": "MEDIUM",
+          "ok": false,
+          "message": "Recovery time is slipping and may soon strain the next board cycle."
+        },
+        "escalationAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Escalation gaps are now overwhelming the recovery path."
+        },
+        "fallbackOwnerAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Fallback ownership is too weak to support clean recovery."
+        },
+        "redundancyAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Path redundancy is too weak to support another break-and-recover cycle."
+        },
+        "confidenceAssessment": {
+          "severity": "MEDIUM",
+          "ok": false,
+          "message": "Board confidence is becoming dependent on extra recovery explanation."
+        },
+        "compositeRecoveryRiskScore": 32.7
+      },
+      {
+        "id": "identity-recovery-readiness",
+        "lane": "Identity and access governance",
+        "track": "IDENTITY",
+        "action": "SHORTEN_RECOVERY",
+        "recoveryTheme": "Identity can recover, but audit and security reviews still stretch the restore window longer than the board packet suggests.",
+        "boardQuestion": "Which identity lane recovers too slowly once an exception route breaks?",
+        "owner": "Chief Information Security Officer",
+        "audience": "Audit committee",
+        "currentPosture": "Identity ownership exists, but restore time is still too dependent on review sequencing.",
+        "readinessHeadline": "Identity recovery windows are too long for the next audit-driven cycle.",
+        "recoverySignal": "The path stays open, but recovery time grows quickly once audit escalations queue behind security approvals.",
+        "weakestFallback": "Audit exception restore path during stacked reviews",
+        "recoveryMoves": [
+          "collapse duplicate review step",
+          "identity recovery clock",
+          "fallback escalation owner"
+        ],
+        "relatedSurfaces": [
+          "certs.kineticgain.com",
+          "guest.kineticgain.com",
+          "protect.kineticgain.com"
+        ],
+        "companyTags": [
+          "Microsoft",
+          "Entra",
+          "Okta"
+        ],
+        "decisionHandoffs": 4,
+        "recoveryHoursToRestore": 72,
+        "escalationGaps": 2,
+        "fallbackOwnerCoverageScore": 60,
+        "pathRedundancyScore": 58,
+        "boardConfidenceScore": 59,
+        "valueAtStakeMillions": 17,
+        "headline": "Identity needs a shorter restore window before the next audit packet lands.",
+        "narrative": "The board should shorten identity recovery time before another exception sequence stretches the restore path too far.",
+        "nextMove": "Cut one duplicate review and pre-assign the recovery owner for audit exceptions.",
+        "handoffAssessment": {
+          "severity": "MEDIUM",
+          "ok": false,
+          "message": "Decision handoffs are stretching recovery and may soon slow the fallback path."
+        },
+        "restoreAssessment": {
+          "severity": "MEDIUM",
+          "ok": false,
+          "message": "Recovery time is slipping and may soon strain the next board cycle."
+        },
+        "escalationAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Escalation gaps are now overwhelming the recovery path."
+        },
+        "fallbackOwnerAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Fallback ownership is too weak to support clean recovery."
+        },
+        "redundancyAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Path redundancy is too weak to support another break-and-recover cycle."
+        },
+        "confidenceAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Board confidence is too thin to trust this path after a break."
+        },
+        "compositeRecoveryRiskScore": 34.2
+      },
+      {
+        "id": "revenue-recovery-readiness",
+        "lane": "Revenue systems and reporting",
+        "track": "REVENUE_SYSTEMS",
+        "action": "BUILD_REDUNDANCY",
+        "recoveryTheme": "Revenue packets reopen because the restore path lacks enough redundancy when finance and commercial signoffs drift.",
+        "boardQuestion": "If a forecast packet reopens, does the revenue lane have a second path to restore board trust quickly?",
+        "owner": "Chief Revenue Officer",
+        "audience": "Board finance committee",
+        "currentPosture": "The revenue lane is measurable, but restore resilience remains incomplete across finance and commercial signoff.",
+        "readinessHeadline": "Revenue recovery still depends on one narrow signoff route.",
+        "recoverySignal": "The board packet shows who reviewed the decision, but not how the path recovers when one approver stalls.",
+        "weakestFallback": "Commercial signoff backup during forecast reopen",
+        "recoveryMoves": [
+          "backup signoff path",
+          "forecast restore drill",
+          "handoff redundancy map"
+        ],
+        "relatedSurfaces": [
+          "powerbi.kineticgain.com",
+          "yield.kineticgain.com",
+          "martech.kineticgain.com"
+        ],
+        "companyTags": [
+          "Power BI",
+          "Tableau",
+          "VWO"
+        ],
+        "decisionHandoffs": 5,
+        "recoveryHoursToRestore": 96,
+        "escalationGaps": 2,
+        "fallbackOwnerCoverageScore": 54,
+        "pathRedundancyScore": 52,
+        "boardConfidenceScore": 54,
+        "valueAtStakeMillions": 25,
+        "headline": "Revenue packets need redundancy before the next restore cycle starts.",
+        "narrative": "The board should require a second restore path before another reopened forecast packet lands on finance.",
+        "nextMove": "Add a backup signoff route and test revenue restore end to end.",
+        "handoffAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Decision handoffs are too long to trust in a recovery scenario."
+        },
+        "restoreAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Recovery time is too long to trust before the next board-facing cycle."
+        },
+        "escalationAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Escalation gaps are now overwhelming the recovery path."
+        },
+        "fallbackOwnerAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Fallback ownership is too weak to support clean recovery."
+        },
+        "redundancyAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Path redundancy is too weak to support another break-and-recover cycle."
+        },
+        "confidenceAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Board confidence is too thin to trust this path after a break."
+        },
+        "compositeRecoveryRiskScore": 39.7
+      },
+      {
+        "id": "fintech-recovery-readiness",
+        "lane": "FinTech diligence and transaction controls",
+        "track": "FINTECH",
+        "action": "BUFFER_HANDOFFS",
+        "recoveryTheme": "FinTech scope looks credible, but the restore path cannot absorb much more diligence load before fallback quality collapses.",
+        "boardQuestion": "Which capital-sensitive lane lacks enough buffer to recover under simultaneous diligence pressure?",
+        "owner": "Chief Financial Officer",
+        "audience": "Investment committee",
+        "currentPosture": "FinTech surfaces are credible, but the restore path is too fragile for another diligence burst.",
+        "readinessHeadline": "FinTech recovery readiness is now a buffer-capacity problem.",
+        "recoverySignal": "Merchant, treasury, and KYC reviews still converge on one overloaded recovery route.",
+        "weakestFallback": "Parallel diligence restore path during merchant-risk and KYC spikes",
+        "recoveryMoves": [
+          "load buffer plan",
+          "parallel restore route",
+          "committee congestion drill"
+        ],
+        "relatedSurfaces": [
+          "payments.kineticgain.com",
+          "merchant.kineticgain.com",
+          "treasury.kineticgain.com",
+          "kyc.kineticgain.com"
+        ],
+        "companyTags": [
+          "Stripe",
+          "Adyen",
+          "Plaid"
+        ],
+        "decisionHandoffs": 6,
+        "recoveryHoursToRestore": 120,
+        "escalationGaps": 3,
+        "fallbackOwnerCoverageScore": 48,
+        "pathRedundancyScore": 46,
+        "boardConfidenceScore": 50,
+        "valueAtStakeMillions": 33,
+        "headline": "FinTech needs more recovery buffer before another scope expansion.",
+        "narrative": "The board should buffer FinTech restore load before approving more work through the same diligence path.",
+        "nextMove": "Add load buffers and a parallel restore route before the next diligence surge.",
+        "handoffAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Decision handoffs are too long to trust in a recovery scenario."
+        },
+        "restoreAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Recovery time is too long to trust before the next board-facing cycle."
+        },
+        "escalationAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Escalation gaps are now overwhelming the recovery path."
+        },
+        "fallbackOwnerAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Fallback ownership is too weak to support clean recovery."
+        },
+        "redundancyAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Path redundancy is too weak to support another break-and-recover cycle."
+        },
+        "confidenceAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Board confidence is too thin to trust this path after a break."
+        },
+        "compositeRecoveryRiskScore": 47
+      },
+      {
+        "id": "procurement-recovery-readiness",
+        "lane": "Procurement, trust, and buyer proof",
+        "track": "PROCUREMENT",
+        "action": "BUILD_REDUNDANCY",
+        "recoveryTheme": "Procurement remains the cleanest decision path and already behaves like the recovery reference model for the rest of the estate.",
+        "boardQuestion": "Which lane already recovers cleanly enough to copy elsewhere?",
+        "owner": "Chief Commercial Officer",
+        "audience": "Board growth committee",
+        "currentPosture": "Procurement closes cleanly because fallback ownership and restore playbooks are already built into the route.",
+        "readinessHeadline": "Procurement remains the strongest recovery reference path in the estate.",
+        "recoverySignal": "Trust and commercial packets close with enough redundancy and named fallback coverage to absorb more demand.",
+        "weakestFallback": "None immediately visible under current modeled load",
+        "recoveryMoves": [
+          "reference recovery packet",
+          "fallback playbook",
+          "copy-forward score history"
+        ],
+        "relatedSurfaces": [
+          "procurement.kineticgain.com",
+          "questionnaire.kineticgain.com",
+          "trust.kineticgain.com"
+        ],
+        "companyTags": [
+          "Vanta",
+          "Drata",
+          "Google"
+        ],
+        "decisionHandoffs": 2,
+        "recoveryHoursToRestore": 12,
+        "escalationGaps": 0,
+        "fallbackOwnerCoverageScore": 88,
+        "pathRedundancyScore": 86,
+        "boardConfidenceScore": 85,
+        "valueAtStakeMillions": 12,
+        "headline": "Procurement shows the recovery pattern the rest of the estate should copy.",
+        "narrative": "Use procurement as the reference lane for recovery ownership, redundancy, and restore confidence.",
+        "nextMove": "Reuse the procurement recovery packet in one constrained adjacent lane.",
+        "handoffAssessment": {
+          "severity": "LOW",
+          "ok": true,
+          "message": "Decision handoffs remain short enough to recover the path without extra coordination debt."
+        },
+        "restoreAssessment": {
+          "severity": "LOW",
+          "ok": true,
+          "message": "The path can be restored inside a board-safe recovery window."
+        },
+        "escalationAssessment": {
+          "severity": "LOW",
+          "ok": true,
+          "message": "Escalation gaps are low enough to keep recovery routing stable."
+        },
+        "fallbackOwnerAssessment": {
+          "severity": "LOW",
+          "ok": true,
+          "message": "Fallback ownership is strong enough to keep the path recoverable."
+        },
+        "redundancyAssessment": {
+          "severity": "LOW",
+          "ok": true,
+          "message": "Path redundancy is strong enough to absorb a recovery event."
+        },
+        "confidenceAssessment": {
+          "severity": "LOW",
+          "ok": true,
+          "message": "Board confidence remains strong enough to trust the recovery path."
+        },
+        "compositeRecoveryRiskScore": 10.7
+      },
+      {
+        "id": "biotech-recovery-readiness",
+        "lane": "Biotech and diagnostics control lanes",
+        "track": "BIOTECH",
+        "action": "BUILD_REDUNDANCY",
+        "recoveryTheme": "Regulated control lanes still depend on too few durable restore paths instead of a stable fallback packet.",
+        "boardQuestion": "Which regulated lane cannot recover cleanly if the board scales another control family?",
+        "owner": "Quality systems lead",
+        "audience": "Board compliance committee",
+        "currentPosture": "Biotech controls are convincing, but restore readiness is still too distributed across quality, compliance, and operations.",
+        "readinessHeadline": "Biotech recovery readiness is weaker than regulated packets suggest.",
+        "recoverySignal": "CAPA, specimen, and safety packets still rely on narrow restore routes with weak fallback ownership.",
+        "weakestFallback": "Quality and compliance restore path during the next regulated exception burst",
+        "recoveryMoves": [
+          "regulated backup route",
+          "recovery drill log",
+          "control packet fallback owner"
+        ],
+        "relatedSurfaces": [
+          "assay.kineticgain.com",
+          "capa.kineticgain.com",
+          "specimen.kineticgain.com",
+          "safety.kineticgain.com"
+        ],
+        "companyTags": [
+          "LabVantage",
+          "Veeva",
+          "Thermo Fisher"
+        ],
+        "decisionHandoffs": 5,
+        "recoveryHoursToRestore": 84,
+        "escalationGaps": 2,
+        "fallbackOwnerCoverageScore": 53,
+        "pathRedundancyScore": 55,
+        "boardConfidenceScore": 56,
+        "valueAtStakeMillions": 26,
+        "headline": "Biotech needs more recovery redundancy before more control-family expansion.",
+        "narrative": "The board should require stronger regulated restore routes before scaling more control surfaces.",
+        "nextMove": "Add one redundant regulated restore path and test it under exception load.",
+        "handoffAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Decision handoffs are too long to trust in a recovery scenario."
+        },
+        "restoreAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Recovery time is too long to trust before the next board-facing cycle."
+        },
+        "escalationAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Escalation gaps are now overwhelming the recovery path."
+        },
+        "fallbackOwnerAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Fallback ownership is too weak to support clean recovery."
+        },
+        "redundancyAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Path redundancy is too weak to support another break-and-recover cycle."
+        },
+        "confidenceAssessment": {
+          "severity": "HIGH",
+          "ok": false,
+          "message": "Board confidence is too thin to trust this path after a break."
+        },
+        "compositeRecoveryRiskScore": 38.5
+      }
+    ]
+  },
+  "recoveryLanes": [
+    {
+      "lane": "AI governance and agent readiness",
+      "action": "ASSIGN_FALLBACK_OWNER",
+      "owner": "Chief AI Officer",
+      "audience": "Board risk committee",
+      "recoveryTheme": "AI approvals move quickly, but the recovery path still depends on too few named fallback owners once policy and security collide.",
+      "boardConfidenceScore": 63,
+      "nextMove": "Name a backup approval owner and test AI recovery under policy-review load.",
+      "decisionHandoffs": 4,
+      "recoveryHoursToRestore": 48
+    },
+    {
+      "lane": "Identity and access governance",
+      "action": "SHORTEN_RECOVERY",
+      "owner": "Chief Information Security Officer",
+      "audience": "Audit committee",
+      "recoveryTheme": "Identity can recover, but audit and security reviews still stretch the restore window longer than the board packet suggests.",
+      "boardConfidenceScore": 59,
+      "nextMove": "Cut one duplicate review and pre-assign the recovery owner for audit exceptions.",
+      "decisionHandoffs": 4,
+      "recoveryHoursToRestore": 72
+    },
+    {
+      "lane": "Revenue systems and reporting",
+      "action": "BUILD_REDUNDANCY",
+      "owner": "Chief Revenue Officer",
+      "audience": "Board finance committee",
+      "recoveryTheme": "Revenue packets reopen because the restore path lacks enough redundancy when finance and commercial signoffs drift.",
+      "boardConfidenceScore": 54,
+      "nextMove": "Add a backup signoff route and test revenue restore end to end.",
+      "decisionHandoffs": 5,
+      "recoveryHoursToRestore": 96
+    },
+    {
+      "lane": "FinTech diligence and transaction controls",
+      "action": "BUFFER_HANDOFFS",
+      "owner": "Chief Financial Officer",
+      "audience": "Investment committee",
+      "recoveryTheme": "FinTech scope looks credible, but the restore path cannot absorb much more diligence load before fallback quality collapses.",
+      "boardConfidenceScore": 50,
+      "nextMove": "Add load buffers and a parallel restore route before the next diligence surge.",
+      "decisionHandoffs": 6,
+      "recoveryHoursToRestore": 120
+    },
+    {
+      "lane": "Procurement, trust, and buyer proof",
+      "action": "BUILD_REDUNDANCY",
+      "owner": "Chief Commercial Officer",
+      "audience": "Board growth committee",
+      "recoveryTheme": "Procurement remains the cleanest decision path and already behaves like the recovery reference model for the rest of the estate.",
+      "boardConfidenceScore": 85,
+      "nextMove": "Reuse the procurement recovery packet in one constrained adjacent lane.",
+      "decisionHandoffs": 2,
+      "recoveryHoursToRestore": 12
+    },
+    {
+      "lane": "Biotech and diagnostics control lanes",
+      "action": "BUILD_REDUNDANCY",
+      "owner": "Quality systems lead",
+      "audience": "Board compliance committee",
+      "recoveryTheme": "Regulated control lanes still depend on too few durable restore paths instead of a stable fallback packet.",
+      "boardConfidenceScore": 56,
+      "nextMove": "Add one redundant regulated restore path and test it under exception load.",
+      "decisionHandoffs": 5,
+      "recoveryHoursToRestore": 84
+    }
+  ],
+  "fallbackMap": [
+    {
+      "lane": "AI governance and agent readiness",
+      "readinessHeadline": "AI recovery readiness is weaker than the current board packet implies.",
+      "recoverySignal": "The approval path reopens cleanly only when the same people are available to absorb policy and security collisions.",
+      "weakestFallback": "Policy-review backup path during an AI exception burst",
+      "recoveryMoves": [
+        "assign alternate approval owner",
+        "AI recovery runbook",
+        "policy/security handoff drill"
+      ],
+      "recoveryHoursToRestore": 48,
+      "escalationGaps": 2
+    },
+    {
+      "lane": "Identity and access governance",
+      "readinessHeadline": "Identity recovery windows are too long for the next audit-driven cycle.",
+      "recoverySignal": "The path stays open, but recovery time grows quickly once audit escalations queue behind security approvals.",
+      "weakestFallback": "Audit exception restore path during stacked reviews",
+      "recoveryMoves": [
+        "collapse duplicate review step",
+        "identity recovery clock",
+        "fallback escalation owner"
+      ],
+      "recoveryHoursToRestore": 72,
+      "escalationGaps": 2
+    },
+    {
+      "lane": "Revenue systems and reporting",
+      "readinessHeadline": "Revenue recovery still depends on one narrow signoff route.",
+      "recoverySignal": "The board packet shows who reviewed the decision, but not how the path recovers when one approver stalls.",
+      "weakestFallback": "Commercial signoff backup during forecast reopen",
+      "recoveryMoves": [
+        "backup signoff path",
+        "forecast restore drill",
+        "handoff redundancy map"
+      ],
+      "recoveryHoursToRestore": 96,
+      "escalationGaps": 2
+    },
+    {
+      "lane": "FinTech diligence and transaction controls",
+      "readinessHeadline": "FinTech recovery readiness is now a buffer-capacity problem.",
+      "recoverySignal": "Merchant, treasury, and KYC reviews still converge on one overloaded recovery route.",
+      "weakestFallback": "Parallel diligence restore path during merchant-risk and KYC spikes",
+      "recoveryMoves": [
+        "load buffer plan",
+        "parallel restore route",
+        "committee congestion drill"
+      ],
+      "recoveryHoursToRestore": 120,
+      "escalationGaps": 3
+    },
+    {
+      "lane": "Procurement, trust, and buyer proof",
+      "readinessHeadline": "Procurement remains the strongest recovery reference path in the estate.",
+      "recoverySignal": "Trust and commercial packets close with enough redundancy and named fallback coverage to absorb more demand.",
+      "weakestFallback": "None immediately visible under current modeled load",
+      "recoveryMoves": [
+        "reference recovery packet",
+        "fallback playbook",
+        "copy-forward score history"
+      ],
+      "recoveryHoursToRestore": 12,
+      "escalationGaps": 0
+    },
+    {
+      "lane": "Biotech and diagnostics control lanes",
+      "readinessHeadline": "Biotech recovery readiness is weaker than regulated packets suggest.",
+      "recoverySignal": "CAPA, specimen, and safety packets still rely on narrow restore routes with weak fallback ownership.",
+      "weakestFallback": "Quality and compliance restore path during the next regulated exception burst",
+      "recoveryMoves": [
+        "regulated backup route",
+        "recovery drill log",
+        "control packet fallback owner"
+      ],
+      "recoveryHoursToRestore": 84,
+      "escalationGaps": 2
+    }
+  ],
+  "recoveryPosture": [
+    {
+      "lane": "AI governance and agent readiness",
+      "action": "ASSIGN_FALLBACK_OWNER",
+      "compositeRecoveryRiskScore": 32.7,
+      "handoffs": {
+        "severity": "MEDIUM",
+        "ok": false,
+        "message": "Decision handoffs are stretching recovery and may soon slow the fallback path."
+      },
+      "restoreWindow": {
+        "severity": "MEDIUM",
+        "ok": false,
+        "message": "Recovery time is slipping and may soon strain the next board cycle."
+      },
+      "escalationGaps": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Escalation gaps are now overwhelming the recovery path."
+      },
+      "fallbackOwners": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Fallback ownership is too weak to support clean recovery."
+      },
+      "redundancy": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Path redundancy is too weak to support another break-and-recover cycle."
+      },
+      "boardConfidence": {
+        "severity": "MEDIUM",
+        "ok": false,
+        "message": "Board confidence is becoming dependent on extra recovery explanation."
+      }
+    },
+    {
+      "lane": "Identity and access governance",
+      "action": "SHORTEN_RECOVERY",
+      "compositeRecoveryRiskScore": 34.2,
+      "handoffs": {
+        "severity": "MEDIUM",
+        "ok": false,
+        "message": "Decision handoffs are stretching recovery and may soon slow the fallback path."
+      },
+      "restoreWindow": {
+        "severity": "MEDIUM",
+        "ok": false,
+        "message": "Recovery time is slipping and may soon strain the next board cycle."
+      },
+      "escalationGaps": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Escalation gaps are now overwhelming the recovery path."
+      },
+      "fallbackOwners": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Fallback ownership is too weak to support clean recovery."
+      },
+      "redundancy": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Path redundancy is too weak to support another break-and-recover cycle."
+      },
+      "boardConfidence": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Board confidence is too thin to trust this path after a break."
+      }
+    },
+    {
+      "lane": "Revenue systems and reporting",
+      "action": "BUILD_REDUNDANCY",
+      "compositeRecoveryRiskScore": 39.7,
+      "handoffs": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Decision handoffs are too long to trust in a recovery scenario."
+      },
+      "restoreWindow": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Recovery time is too long to trust before the next board-facing cycle."
+      },
+      "escalationGaps": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Escalation gaps are now overwhelming the recovery path."
+      },
+      "fallbackOwners": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Fallback ownership is too weak to support clean recovery."
+      },
+      "redundancy": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Path redundancy is too weak to support another break-and-recover cycle."
+      },
+      "boardConfidence": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Board confidence is too thin to trust this path after a break."
+      }
+    },
+    {
+      "lane": "FinTech diligence and transaction controls",
+      "action": "BUFFER_HANDOFFS",
+      "compositeRecoveryRiskScore": 47,
+      "handoffs": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Decision handoffs are too long to trust in a recovery scenario."
+      },
+      "restoreWindow": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Recovery time is too long to trust before the next board-facing cycle."
+      },
+      "escalationGaps": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Escalation gaps are now overwhelming the recovery path."
+      },
+      "fallbackOwners": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Fallback ownership is too weak to support clean recovery."
+      },
+      "redundancy": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Path redundancy is too weak to support another break-and-recover cycle."
+      },
+      "boardConfidence": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Board confidence is too thin to trust this path after a break."
+      }
+    },
+    {
+      "lane": "Procurement, trust, and buyer proof",
+      "action": "BUILD_REDUNDANCY",
+      "compositeRecoveryRiskScore": 10.7,
+      "handoffs": {
+        "severity": "LOW",
+        "ok": true,
+        "message": "Decision handoffs remain short enough to recover the path without extra coordination debt."
+      },
+      "restoreWindow": {
+        "severity": "LOW",
+        "ok": true,
+        "message": "The path can be restored inside a board-safe recovery window."
+      },
+      "escalationGaps": {
+        "severity": "LOW",
+        "ok": true,
+        "message": "Escalation gaps are low enough to keep recovery routing stable."
+      },
+      "fallbackOwners": {
+        "severity": "LOW",
+        "ok": true,
+        "message": "Fallback ownership is strong enough to keep the path recoverable."
+      },
+      "redundancy": {
+        "severity": "LOW",
+        "ok": true,
+        "message": "Path redundancy is strong enough to absorb a recovery event."
+      },
+      "boardConfidence": {
+        "severity": "LOW",
+        "ok": true,
+        "message": "Board confidence remains strong enough to trust the recovery path."
+      }
+    },
+    {
+      "lane": "Biotech and diagnostics control lanes",
+      "action": "BUILD_REDUNDANCY",
+      "compositeRecoveryRiskScore": 38.5,
+      "handoffs": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Decision handoffs are too long to trust in a recovery scenario."
+      },
+      "restoreWindow": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Recovery time is too long to trust before the next board-facing cycle."
+      },
+      "escalationGaps": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Escalation gaps are now overwhelming the recovery path."
+      },
+      "fallbackOwners": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Fallback ownership is too weak to support clean recovery."
+      },
+      "redundancy": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Path redundancy is too weak to support another break-and-recover cycle."
+      },
+      "boardConfidence": {
+        "severity": "HIGH",
+        "ok": false,
+        "message": "Board confidence is too thin to trust this path after a break."
+      }
+    }
+  ],
+  "riskMap": [
+    {
+      "lane": "AI governance and agent readiness",
+      "track": "AI_GOVERNANCE",
+      "valueAtStakeMillions": 28,
+      "compositeRecoveryRiskScore": 32.7,
+      "boardConfidenceScore": 63,
+      "companyTags": [
+        "OpenAI",
+        "Anthropic",
+        "Microsoft"
+      ]
+    },
+    {
+      "lane": "Identity and access governance",
+      "track": "IDENTITY",
+      "valueAtStakeMillions": 17,
+      "compositeRecoveryRiskScore": 34.2,
+      "boardConfidenceScore": 59,
+      "companyTags": [
+        "Microsoft",
+        "Entra",
+        "Okta"
+      ]
+    },
+    {
+      "lane": "Revenue systems and reporting",
+      "track": "REVENUE_SYSTEMS",
+      "valueAtStakeMillions": 25,
+      "compositeRecoveryRiskScore": 39.7,
+      "boardConfidenceScore": 54,
+      "companyTags": [
+        "Power BI",
+        "Tableau",
+        "VWO"
+      ]
+    },
+    {
+      "lane": "FinTech diligence and transaction controls",
+      "track": "FINTECH",
+      "valueAtStakeMillions": 33,
+      "compositeRecoveryRiskScore": 47,
+      "boardConfidenceScore": 50,
+      "companyTags": [
+        "Stripe",
+        "Adyen",
+        "Plaid"
+      ]
+    },
+    {
+      "lane": "Procurement, trust, and buyer proof",
+      "track": "PROCUREMENT",
+      "valueAtStakeMillions": 12,
+      "compositeRecoveryRiskScore": 10.7,
+      "boardConfidenceScore": 85,
+      "companyTags": [
+        "Vanta",
+        "Drata",
+        "Google"
+      ]
+    },
+    {
+      "lane": "Biotech and diagnostics control lanes",
+      "track": "BIOTECH",
+      "valueAtStakeMillions": 26,
+      "compositeRecoveryRiskScore": 38.5,
+      "boardConfidenceScore": 56,
+      "companyTags": [
+        "LabVantage",
+        "Veeva",
+        "Thermo Fisher"
+      ]
+    }
+  ],
+  "verification": [
+    "Synthetic decision-path-recovery data only - no live board packets, actual committee routes, or real restoration logs are included.",
+    "Scores are modeled to show how Kinetic Gain can turn weak fallback ownership, thin redundancy, and long restore windows into board-readable recovery decisions.",
+    "All routes are read-only and demonstrate board-facing recovery readiness, not production workflow automation."
+  ],
+  "sample": [
+    {
+      "id": "ai-governance-recovery-readiness",
+      "lane": "AI governance and agent readiness",
+      "track": "AI_GOVERNANCE",
+      "action": "ASSIGN_FALLBACK_OWNER",
+      "recoveryTheme": "AI approvals move quickly, but the recovery path still depends on too few named fallback owners once policy and security collide.",
+      "boardQuestion": "If the AI approval route breaks, who restores the path and how quickly can the board trust it again?",
+      "owner": "Chief AI Officer",
+      "audience": "Board risk committee",
+      "currentPosture": "AI controls are visible, but fallback ownership is still too thin for a noisy exception cycle.",
+      "readinessHeadline": "AI recovery readiness is weaker than the current board packet implies.",
+      "recoverySignal": "The approval path reopens cleanly only when the same people are available to absorb policy and security collisions.",
+      "weakestFallback": "Policy-review backup path during an AI exception burst",
+      "recoveryMoves": [
+        "assign alternate approval owner",
+        "AI recovery runbook",
+        "policy/security handoff drill"
+      ],
+      "relatedSurfaces": [
+        "scorecard.kineticgain.com",
+        "memo.kineticgain.com",
+        "agents.kineticgain.com"
+      ],
+      "companyTags": [
+        "OpenAI",
+        "Anthropic",
+        "Microsoft"
+      ],
+      "decisionHandoffs": 4,
+      "recoveryHoursToRestore": 48,
+      "escalationGaps": 2,
+      "fallbackOwnerCoverageScore": 57,
+      "pathRedundancyScore": 60,
+      "boardConfidenceScore": 63,
+      "valueAtStakeMillions": 28,
+      "headline": "AI needs named fallback ownership before the next board cycle depends on recovery.",
+      "narrative": "The board should reinforce AI recovery ownership before another exception cycle turns one path failure into multiple approval stalls.",
+      "nextMove": "Name a backup approval owner and test AI recovery under policy-review load."
+    },
+    {
+      "id": "identity-recovery-readiness",
+      "lane": "Identity and access governance",
+      "track": "IDENTITY",
+      "action": "SHORTEN_RECOVERY",
+      "recoveryTheme": "Identity can recover, but audit and security reviews still stretch the restore window longer than the board packet suggests.",
+      "boardQuestion": "Which identity lane recovers too slowly once an exception route breaks?",
+      "owner": "Chief Information Security Officer",
+      "audience": "Audit committee",
+      "currentPosture": "Identity ownership exists, but restore time is still too dependent on review sequencing.",
+      "readinessHeadline": "Identity recovery windows are too long for the next audit-driven cycle.",
+      "recoverySignal": "The path stays open, but recovery time grows quickly once audit escalations queue behind security approvals.",
+      "weakestFallback": "Audit exception restore path during stacked reviews",
+      "recoveryMoves": [
+        "collapse duplicate review step",
+        "identity recovery clock",
+        "fallback escalation owner"
+      ],
+      "relatedSurfaces": [
+        "certs.kineticgain.com",
+        "guest.kineticgain.com",
+        "protect.kineticgain.com"
+      ],
+      "companyTags": [
+        "Microsoft",
+        "Entra",
+        "Okta"
+      ],
+      "decisionHandoffs": 4,
+      "recoveryHoursToRestore": 72,
+      "escalationGaps": 2,
+      "fallbackOwnerCoverageScore": 60,
+      "pathRedundancyScore": 58,
+      "boardConfidenceScore": 59,
+      "valueAtStakeMillions": 17,
+      "headline": "Identity needs a shorter restore window before the next audit packet lands.",
+      "narrative": "The board should shorten identity recovery time before another exception sequence stretches the restore path too far.",
+      "nextMove": "Cut one duplicate review and pre-assign the recovery owner for audit exceptions."
+    },
+    {
+      "id": "revenue-recovery-readiness",
+      "lane": "Revenue systems and reporting",
+      "track": "REVENUE_SYSTEMS",
+      "action": "BUILD_REDUNDANCY",
+      "recoveryTheme": "Revenue packets reopen because the restore path lacks enough redundancy when finance and commercial signoffs drift.",
+      "boardQuestion": "If a forecast packet reopens, does the revenue lane have a second path to restore board trust quickly?",
+      "owner": "Chief Revenue Officer",
+      "audience": "Board finance committee",
+      "currentPosture": "The revenue lane is measurable, but restore resilience remains incomplete across finance and commercial signoff.",
+      "readinessHeadline": "Revenue recovery still depends on one narrow signoff route.",
+      "recoverySignal": "The board packet shows who reviewed the decision, but not how the path recovers when one approver stalls.",
+      "weakestFallback": "Commercial signoff backup during forecast reopen",
+      "recoveryMoves": [
+        "backup signoff path",
+        "forecast restore drill",
+        "handoff redundancy map"
+      ],
+      "relatedSurfaces": [
+        "powerbi.kineticgain.com",
+        "yield.kineticgain.com",
+        "martech.kineticgain.com"
+      ],
+      "companyTags": [
+        "Power BI",
+        "Tableau",
+        "VWO"
+      ],
+      "decisionHandoffs": 5,
+      "recoveryHoursToRestore": 96,
+      "escalationGaps": 2,
+      "fallbackOwnerCoverageScore": 54,
+      "pathRedundancyScore": 52,
+      "boardConfidenceScore": 54,
+      "valueAtStakeMillions": 25,
+      "headline": "Revenue packets need redundancy before the next restore cycle starts.",
+      "narrative": "The board should require a second restore path before another reopened forecast packet lands on finance.",
+      "nextMove": "Add a backup signoff route and test revenue restore end to end."
+    },
+    {
+      "id": "fintech-recovery-readiness",
+      "lane": "FinTech diligence and transaction controls",
+      "track": "FINTECH",
+      "action": "BUFFER_HANDOFFS",
+      "recoveryTheme": "FinTech scope looks credible, but the restore path cannot absorb much more diligence load before fallback quality collapses.",
+      "boardQuestion": "Which capital-sensitive lane lacks enough buffer to recover under simultaneous diligence pressure?",
+      "owner": "Chief Financial Officer",
+      "audience": "Investment committee",
+      "currentPosture": "FinTech surfaces are credible, but the restore path is too fragile for another diligence burst.",
+      "readinessHeadline": "FinTech recovery readiness is now a buffer-capacity problem.",
+      "recoverySignal": "Merchant, treasury, and KYC reviews still converge on one overloaded recovery route.",
+      "weakestFallback": "Parallel diligence restore path during merchant-risk and KYC spikes",
+      "recoveryMoves": [
+        "load buffer plan",
+        "parallel restore route",
+        "committee congestion drill"
+      ],
+      "relatedSurfaces": [
+        "payments.kineticgain.com",
+        "merchant.kineticgain.com",
+        "treasury.kineticgain.com",
+        "kyc.kineticgain.com"
+      ],
+      "companyTags": [
+        "Stripe",
+        "Adyen",
+        "Plaid"
+      ],
+      "decisionHandoffs": 6,
+      "recoveryHoursToRestore": 120,
+      "escalationGaps": 3,
+      "fallbackOwnerCoverageScore": 48,
+      "pathRedundancyScore": 46,
+      "boardConfidenceScore": 50,
+      "valueAtStakeMillions": 33,
+      "headline": "FinTech needs more recovery buffer before another scope expansion.",
+      "narrative": "The board should buffer FinTech restore load before approving more work through the same diligence path.",
+      "nextMove": "Add load buffers and a parallel restore route before the next diligence surge."
+    },
+    {
+      "id": "procurement-recovery-readiness",
+      "lane": "Procurement, trust, and buyer proof",
+      "track": "PROCUREMENT",
+      "action": "BUILD_REDUNDANCY",
+      "recoveryTheme": "Procurement remains the cleanest decision path and already behaves like the recovery reference model for the rest of the estate.",
+      "boardQuestion": "Which lane already recovers cleanly enough to copy elsewhere?",
+      "owner": "Chief Commercial Officer",
+      "audience": "Board growth committee",
+      "currentPosture": "Procurement closes cleanly because fallback ownership and restore playbooks are already built into the route.",
+      "readinessHeadline": "Procurement remains the strongest recovery reference path in the estate.",
+      "recoverySignal": "Trust and commercial packets close with enough redundancy and named fallback coverage to absorb more demand.",
+      "weakestFallback": "None immediately visible under current modeled load",
+      "recoveryMoves": [
+        "reference recovery packet",
+        "fallback playbook",
+        "copy-forward score history"
+      ],
+      "relatedSurfaces": [
+        "procurement.kineticgain.com",
+        "questionnaire.kineticgain.com",
+        "trust.kineticgain.com"
+      ],
+      "companyTags": [
+        "Vanta",
+        "Drata",
+        "Google"
+      ],
+      "decisionHandoffs": 2,
+      "recoveryHoursToRestore": 12,
+      "escalationGaps": 0,
+      "fallbackOwnerCoverageScore": 88,
+      "pathRedundancyScore": 86,
+      "boardConfidenceScore": 85,
+      "valueAtStakeMillions": 12,
+      "headline": "Procurement shows the recovery pattern the rest of the estate should copy.",
+      "narrative": "Use procurement as the reference lane for recovery ownership, redundancy, and restore confidence.",
+      "nextMove": "Reuse the procurement recovery packet in one constrained adjacent lane."
+    },
+    {
+      "id": "biotech-recovery-readiness",
+      "lane": "Biotech and diagnostics control lanes",
+      "track": "BIOTECH",
+      "action": "BUILD_REDUNDANCY",
+      "recoveryTheme": "Regulated control lanes still depend on too few durable restore paths instead of a stable fallback packet.",
+      "boardQuestion": "Which regulated lane cannot recover cleanly if the board scales another control family?",
+      "owner": "Quality systems lead",
+      "audience": "Board compliance committee",
+      "currentPosture": "Biotech controls are convincing, but restore readiness is still too distributed across quality, compliance, and operations.",
+      "readinessHeadline": "Biotech recovery readiness is weaker than regulated packets suggest.",
+      "recoverySignal": "CAPA, specimen, and safety packets still rely on narrow restore routes with weak fallback ownership.",
+      "weakestFallback": "Quality and compliance restore path during the next regulated exception burst",
+      "recoveryMoves": [
+        "regulated backup route",
+        "recovery drill log",
+        "control packet fallback owner"
+      ],
+      "relatedSurfaces": [
+        "assay.kineticgain.com",
+        "capa.kineticgain.com",
+        "specimen.kineticgain.com",
+        "safety.kineticgain.com"
+      ],
+      "companyTags": [
+        "LabVantage",
+        "Veeva",
+        "Thermo Fisher"
+      ],
+      "decisionHandoffs": 5,
+      "recoveryHoursToRestore": 84,
+      "escalationGaps": 2,
+      "fallbackOwnerCoverageScore": 53,
+      "pathRedundancyScore": 55,
+      "boardConfidenceScore": 56,
+      "valueAtStakeMillions": 26,
+      "headline": "Biotech needs more recovery redundancy before more control-family expansion.",
+      "narrative": "The board should require stronger regulated restore routes before scaling more control surfaces.",
+      "nextMove": "Add one redundant regulated restore path and test it under exception load."
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "lane": "AI governance and agent readiness",
+    "action": "ASSIGN_FALLBACK_OWNER",
+    "compositeRecoveryRiskScore": 32.7,
+    "handoffs": {
+      "severity": "MEDIUM",
+      "ok": false,
+      "message": "Decision handoffs are stretching recovery and may soon slow the fallback path."
+    },
+    "restoreWindow": {
+      "severity": "MEDIUM",
+      "ok": false,
+      "message": "Recovery time is slipping and may soon strain the next board cycle."
+    },
+    "escalationGaps": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Escalation gaps are now overwhelming the recovery path."
+    },
+    "fallbackOwners": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Fallback ownership is too weak to support clean recovery."
+    },
+    "redundancy": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Path redundancy is too weak to support another break-and-recover cycle."
+    },
+    "boardConfidence": {
+      "severity": "MEDIUM",
+      "ok": false,
+      "message": "Board confidence is becoming dependent on extra recovery explanation."
+    }
+  },
+  {
+    "lane": "Identity and access governance",
+    "action": "SHORTEN_RECOVERY",
+    "compositeRecoveryRiskScore": 34.2,
+    "handoffs": {
+      "severity": "MEDIUM",
+      "ok": false,
+      "message": "Decision handoffs are stretching recovery and may soon slow the fallback path."
+    },
+    "restoreWindow": {
+      "severity": "MEDIUM",
+      "ok": false,
+      "message": "Recovery time is slipping and may soon strain the next board cycle."
+    },
+    "escalationGaps": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Escalation gaps are now overwhelming the recovery path."
+    },
+    "fallbackOwners": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Fallback ownership is too weak to support clean recovery."
+    },
+    "redundancy": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Path redundancy is too weak to support another break-and-recover cycle."
+    },
+    "boardConfidence": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Board confidence is too thin to trust this path after a break."
+    }
+  },
+  {
+    "lane": "Revenue systems and reporting",
+    "action": "BUILD_REDUNDANCY",
+    "compositeRecoveryRiskScore": 39.7,
+    "handoffs": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Decision handoffs are too long to trust in a recovery scenario."
+    },
+    "restoreWindow": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Recovery time is too long to trust before the next board-facing cycle."
+    },
+    "escalationGaps": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Escalation gaps are now overwhelming the recovery path."
+    },
+    "fallbackOwners": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Fallback ownership is too weak to support clean recovery."
+    },
+    "redundancy": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Path redundancy is too weak to support another break-and-recover cycle."
+    },
+    "boardConfidence": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Board confidence is too thin to trust this path after a break."
+    }
+  },
+  {
+    "lane": "FinTech diligence and transaction controls",
+    "action": "BUFFER_HANDOFFS",
+    "compositeRecoveryRiskScore": 47,
+    "handoffs": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Decision handoffs are too long to trust in a recovery scenario."
+    },
+    "restoreWindow": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Recovery time is too long to trust before the next board-facing cycle."
+    },
+    "escalationGaps": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Escalation gaps are now overwhelming the recovery path."
+    },
+    "fallbackOwners": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Fallback ownership is too weak to support clean recovery."
+    },
+    "redundancy": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Path redundancy is too weak to support another break-and-recover cycle."
+    },
+    "boardConfidence": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Board confidence is too thin to trust this path after a break."
+    }
+  },
+  {
+    "lane": "Procurement, trust, and buyer proof",
+    "action": "BUILD_REDUNDANCY",
+    "compositeRecoveryRiskScore": 10.7,
+    "handoffs": {
+      "severity": "LOW",
+      "ok": true,
+      "message": "Decision handoffs remain short enough to recover the path without extra coordination debt."
+    },
+    "restoreWindow": {
+      "severity": "LOW",
+      "ok": true,
+      "message": "The path can be restored inside a board-safe recovery window."
+    },
+    "escalationGaps": {
+      "severity": "LOW",
+      "ok": true,
+      "message": "Escalation gaps are low enough to keep recovery routing stable."
+    },
+    "fallbackOwners": {
+      "severity": "LOW",
+      "ok": true,
+      "message": "Fallback ownership is strong enough to keep the path recoverable."
+    },
+    "redundancy": {
+      "severity": "LOW",
+      "ok": true,
+      "message": "Path redundancy is strong enough to absorb a recovery event."
+    },
+    "boardConfidence": {
+      "severity": "LOW",
+      "ok": true,
+      "message": "Board confidence remains strong enough to trust the recovery path."
+    }
+  },
+  {
+    "lane": "Biotech and diagnostics control lanes",
+    "action": "BUILD_REDUNDANCY",
+    "compositeRecoveryRiskScore": 38.5,
+    "handoffs": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Decision handoffs are too long to trust in a recovery scenario."
+    },
+    "restoreWindow": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Recovery time is too long to trust before the next board-facing cycle."
+    },
+    "escalationGaps": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Escalation gaps are now overwhelming the recovery path."
+    },
+    "fallbackOwners": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Fallback ownership is too weak to support clean recovery."
+    },
+    "redundancy": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Path redundancy is too weak to support another break-and-recover cycle."
+    },
+    "boardConfidence": {
+      "severity": "HIGH",
+      "ok": false,
+      "message": "Board confidence is too thin to trust this path after a break."
+    }
+  }
+]
