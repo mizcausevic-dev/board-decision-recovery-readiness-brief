@@ -1,0 +1,5 @@
+[
+  "Synthetic decision-path-recovery data only - no live board packets, actual committee routes, or real restoration logs are included.",
+  "Scores are modeled to show how Kinetic Gain can turn weak fallback ownership, thin redundancy, and long restore windows into board-readable recovery decisions.",
+  "All routes are read-only and demonstrate board-facing recovery readiness, not production workflow automation."
+]

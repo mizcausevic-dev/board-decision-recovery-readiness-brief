@@ -1,0 +1,80 @@
+[
+  {
+    "lane": "AI governance and agent readiness",
+    "readinessHeadline": "AI recovery readiness is weaker than the current board packet implies.",
+    "recoverySignal": "The approval path reopens cleanly only when the same people are available to absorb policy and security collisions.",
+    "weakestFallback": "Policy-review backup path during an AI exception burst",
+    "recoveryMoves": [
+      "assign alternate approval owner",
+      "AI recovery runbook",
+      "policy/security handoff drill"
+    ],
+    "recoveryHoursToRestore": 48,
+    "escalationGaps": 2
+  },
+  {
+    "lane": "Identity and access governance",
+    "readinessHeadline": "Identity recovery windows are too long for the next audit-driven cycle.",
+    "recoverySignal": "The path stays open, but recovery time grows quickly once audit escalations queue behind security approvals.",
+    "weakestFallback": "Audit exception restore path during stacked reviews",
+    "recoveryMoves": [
+      "collapse duplicate review step",
+      "identity recovery clock",
+      "fallback escalation owner"
+    ],
+    "recoveryHoursToRestore": 72,
+    "escalationGaps": 2
+  },
+  {
+    "lane": "Revenue systems and reporting",
+    "readinessHeadline": "Revenue recovery still depends on one narrow signoff route.",
+    "recoverySignal": "The board packet shows who reviewed the decision, but not how the path recovers when one approver stalls.",
+    "weakestFallback": "Commercial signoff backup during forecast reopen",
+    "recoveryMoves": [
+      "backup signoff path",
+      "forecast restore drill",
+      "handoff redundancy map"
+    ],
+    "recoveryHoursToRestore": 96,
+    "escalationGaps": 2
+  },
+  {
+    "lane": "FinTech diligence and transaction controls",
+    "readinessHeadline": "FinTech recovery readiness is now a buffer-capacity problem.",
+    "recoverySignal": "Merchant, treasury, and KYC reviews still converge on one overloaded recovery route.",
+    "weakestFallback": "Parallel diligence restore path during merchant-risk and KYC spikes",
+    "recoveryMoves": [
+      "load buffer plan",
+      "parallel restore route",
+      "committee congestion drill"
+    ],
+    "recoveryHoursToRestore": 120,
+    "escalationGaps": 3
+  },
+  {
+    "lane": "Procurement, trust, and buyer proof",
+    "readinessHeadline": "Procurement remains the strongest recovery reference path in the estate.",
+    "recoverySignal": "Trust and commercial packets close with enough redundancy and named fallback coverage to absorb more demand.",
+    "weakestFallback": "None immediately visible under current modeled load",
+    "recoveryMoves": [
+      "reference recovery packet",
+      "fallback playbook",
+      "copy-forward score history"
+    ],
+    "recoveryHoursToRestore": 12,
+    "escalationGaps": 0
+  },
+  {
+    "lane": "Biotech and diagnostics control lanes",
+    "readinessHeadline": "Biotech recovery readiness is weaker than regulated packets suggest.",
+    "recoverySignal": "CAPA, specimen, and safety packets still rely on narrow restore routes with weak fallback ownership.",
+    "weakestFallback": "Quality and compliance restore path during the next regulated exception burst",
+    "recoveryMoves": [
+      "regulated backup route",
+      "recovery drill log",
+      "control packet fallback owner"
+    ],
+    "recoveryHoursToRestore": 84,
+    "escalationGaps": 2
+  }
+]

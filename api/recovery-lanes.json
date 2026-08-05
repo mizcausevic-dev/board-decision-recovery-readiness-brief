@@ -1,0 +1,68 @@
+[
+  {
+    "lane": "AI governance and agent readiness",
+    "action": "ASSIGN_FALLBACK_OWNER",
+    "owner": "Chief AI Officer",
+    "audience": "Board risk committee",
+    "recoveryTheme": "AI approvals move quickly, but the recovery path still depends on too few named fallback owners once policy and security collide.",
+    "boardConfidenceScore": 63,
+    "nextMove": "Name a backup approval owner and test AI recovery under policy-review load.",
+    "decisionHandoffs": 4,
+    "recoveryHoursToRestore": 48
+  },
+  {
+    "lane": "Identity and access governance",
+    "action": "SHORTEN_RECOVERY",
+    "owner": "Chief Information Security Officer",
+    "audience": "Audit committee",
+    "recoveryTheme": "Identity can recover, but audit and security reviews still stretch the restore window longer than the board packet suggests.",
+    "boardConfidenceScore": 59,
+    "nextMove": "Cut one duplicate review and pre-assign the recovery owner for audit exceptions.",
+    "decisionHandoffs": 4,
+    "recoveryHoursToRestore": 72
+  },
+  {
+    "lane": "Revenue systems and reporting",
+    "action": "BUILD_REDUNDANCY",
+    "owner": "Chief Revenue Officer",
+    "audience": "Board finance committee",
+    "recoveryTheme": "Revenue packets reopen because the restore path lacks enough redundancy when finance and commercial signoffs drift.",
+    "boardConfidenceScore": 54,
+    "nextMove": "Add a backup signoff route and test revenue restore end to end.",
+    "decisionHandoffs": 5,
+    "recoveryHoursToRestore": 96
+  },
+  {
+    "lane": "FinTech diligence and transaction controls",
+    "action": "BUFFER_HANDOFFS",
+    "owner": "Chief Financial Officer",
+    "audience": "Investment committee",
+    "recoveryTheme": "FinTech scope looks credible, but the restore path cannot absorb much more diligence load before fallback quality collapses.",
+    "boardConfidenceScore": 50,
+    "nextMove": "Add load buffers and a parallel restore route before the next diligence surge.",
+    "decisionHandoffs": 6,
+    "recoveryHoursToRestore": 120
+  },
+  {
+    "lane": "Procurement, trust, and buyer proof",
+    "action": "BUILD_REDUNDANCY",
+    "owner": "Chief Commercial Officer",
+    "audience": "Board growth committee",
+    "recoveryTheme": "Procurement remains the cleanest decision path and already behaves like the recovery reference model for the rest of the estate.",
+    "boardConfidenceScore": 85,
+    "nextMove": "Reuse the procurement recovery packet in one constrained adjacent lane.",
+    "decisionHandoffs": 2,
+    "recoveryHoursToRestore": 12
+  },
+  {
+    "lane": "Biotech and diagnostics control lanes",
+    "action": "BUILD_REDUNDANCY",
+    "owner": "Quality systems lead",
+    "audience": "Board compliance committee",
+    "recoveryTheme": "Regulated control lanes still depend on too few durable restore paths instead of a stable fallback packet.",
+    "boardConfidenceScore": 56,
+    "nextMove": "Add one redundant regulated restore path and test it under exception load.",
+    "decisionHandoffs": 5,
+    "recoveryHoursToRestore": 84
+  }
+]
